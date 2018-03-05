@@ -1,0 +1,35 @@
+div {
+background-color: lightGreen;
+border: 5px solid orange;
+
+}
+h1,h2{
+text-align: center;
+color: RGB(255,55,25)
+}
+body {
+background-color: lightblue;
+}
+
+div p {
+align: center;
+color: lightorange;
+border: 7px solid green;
+padding:50px;
+margin: 50px;
+font-size: 20px;
+font-family: "Verdana";
+background-color: RGB(255,155,155);
+text-align: center;
+}
+
+div ul{
+align: center;
+color: lightorange;
+border: 7px solid green;
+padding:50px;
+margin: 50px;
+font-size: 20px;
+font-family: "Verdana";
+background-color: RGB(255,155,155);
+}

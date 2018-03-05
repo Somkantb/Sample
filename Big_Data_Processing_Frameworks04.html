@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Big Data Processing Frameworks</title>
+<link rel="stylesheet" type="text/css" href="F:\NECAssignment\Webapplication\final_project\bigdata_css.css">
+
+</head>
+<body>
+<div>
+<h1>Big Data Processing Frameworks</h1>
+<p>
+Processing frameworks and processing engines are responsible for computing over data in a data system. While there is no authoritative definition setting apart "engines" from "frameworks", it is sometimes useful to define the former as the actual component responsible for operating on dataand the latter as a set of components designed to do the same.
+
+</p>
+<h2>Batch Processing Systems</h2>
+<p> 
+Batch processing involves operating over a large, static dataset and returning the result at a later time when the computation is complete. The datasets in batch processing are typically...
+</p>
+
+<ul>
+
+<li>Bounded: batch datasets represent a finite collection of data.</li>
+<li>Persistent: data is almost always backed by some type of permanent storage.</li>
+<li>Large: batch operations are often the only option for processing extremely large sets of data.</li> 
+
+</ul>
+
+<p> 
+Batch processing is well-suited for calculations where access to a complete set of records is required. For instance, when calculating totals and averages, datasets must be treated holistically instead of as a collection of individual records. These operations require that state be maintained for the duration of the calculations. Tasks that require very large volumes of data are often best handled by batch operations.
+</P>
+
+
+<h2>Apache Hadoop.</h2>
+<p>
+Apache Hadoop is a processing framework that exclusively provides batch processing. Hadoop was the first big data framework to gain significant traction in the open-source community. Based on several papers and presentations by Google about how they were dealing with tremendous amounts of data at the time, Hadoop reimplemented the algorithms and component stack to make large scale batch processing more accessible. Modern versions of Hadoop are composed of several components or layers, that work together to process batch data.
+</p>
+
+<p>
+
+<b>HDFS:</b> HDFS is the distributed filesystem layer that coordinates storage and replication across the cluster nodes. HDFS ensures that data remains available in spite of inevitable host failures. It is used as the source of data, to store intermediate processing results, and to persist the final calculated results.
+</p>
+<p>
+ <b>Yarn:</b>YARN, which stands for Yet Another Resource Negotiator, is the cluster coordinating component of the Hadoop stack. It is responsible for coordinating and managing the underlying resources and scheduling jobs to be run. YARN makes it possible to run much more diverse workloads on a Hadoop cluster than was possible in earlier iterations by acting as an interface to the cluster resources.
+ </p>
+ 
+ <p>
+<b> MapReduce:</b> MapReduce is Hadoop's native batch processing engine.
+ </p>
+ 
+ <h2> Stream Processing Systems</h2>
+ 
+ <p>
+Stream processing systems compute over data as it enters the system. This requires a different processing model than the batch paradigm. Instead of defining operations to apply to an entire dataset, stream processors define operations that will be applied to each individual data item as it passes through the system.
+ 
+ </p>
+ <h2> Apache Storm</h2>
+ <p>
+Apache Storm is a stream processing framework that focuses on extremely low latency and is perhaps the best option for workloads that require near real-time processing. It can handle very large quantities of data with and deliver results with less latency than other solutions.
+ </p>
+ 
+<h2> Hybrid Processing Systems: Batch and Stream Processors</h2>
+<p>Some processing frameworks can handle both batch and stream workloads. These frameworks simplify diverse processing requirements by allowing the same or related components and APIs to be used for both types of data.
+ </p>
+ 
+ <h2>Apache Spark</h2>
+
+<p>Apache Spark is a next generation batch processing framework with stream processing capabilities. Built using many of the same principles of Hadoop's MapReduce engine, Spark focuses primarily on speeding up batch processing workloads by offering full in-memory computation and processing optimization.
+Spark can be deployed as a standalone cluster (if paired with a capable storage layer) or can hook into Hadoop as an alternative to the MapReduce engine.
+</p>
+
+</div>
+<p style= " text-align: center; font-size:35px; word-spacing: 30px; "> <a style ="text-decoration: none;" href="F:\NECAssignment\Webapplication\final_project\Big_Data_Archtecture_Framework03.html" > Previous </a> <a style ="text-decoration: none;" href="F:\NECAssignment\Webapplication\final_project\index.html" > Index </a>  <a style ="text-decoration: none;" href="F:\NECAssignment\Webapplication\final_project\Big_Data_Career_Options05.html" > Next </a> </p>
+
+</body>
+</html>

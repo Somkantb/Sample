@@ -1,0 +1,19 @@
+div {
+width: 1000px;
+Height: 400px;
+background-color: light Green;
+border: 5px solid orange;
+
+}
+h1,h2{
+text-align: center;
+color: RGB(255,55,25)
+}
+body {
+background-color: lightblue;
+}
+
+
+p {
+color: lightorange;
+}
